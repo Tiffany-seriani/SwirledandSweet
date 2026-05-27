@@ -70,6 +70,9 @@
 .background{
     color: brown
 }
+.row{
+    row-gap: 30px;
+}
 .section-title{
      text-align: center;
      font-size: 2.2rem;
@@ -85,19 +88,25 @@
 .card-body{
     background-color: #F2E6D8;
 }
+
 .card-img{
-    height: 250px;
+    height: 220px;
     object-fit: cover;
 }
 .card-title{
     font-family: playfair display;
+    font-weight:bold
 }
 .buy-btn{
+    display: inline-block;
+    background-color: #FFF9F4 !important;
     color: black !important;
     border: none !important;
-    border-radius: 40px;
+    border-radius: 6px;
     padding: 10px 25px;
     font-weight: bold;
 }
+
+
 
 
