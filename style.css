@@ -5,19 +5,22 @@
   scroll-behavior: smooth;
 }
 #navbar{
-    position: sticky;
+    position: absolute;
     top: 0;
+    left: 0;
+    width: 100%;
     z-index: 10;
 }
 .navbar{
-    background-image: linear-gradient(to right, #F2B6B8,#F7D9E0);
-    display:flex;
+   display:flex;
    align-items:center;
    justify-content:space-between;
-   padding:8px 20px;
+   padding:10px 30px;
+   background: rgba(0, 0, 0, 0.25); /* glass effect */
+   backdrop-filter: blur(10px);
 }
 .logo{
-    width: 120px;
+    width: 90px;
     height: auto;
 }
 .navbar-nav{
@@ -29,14 +32,72 @@
     color: azure;
     font-weight: 600;
 }
-/* banner section */
+/* hero section */
 .hero{
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.1),
-rgba(0,0,0,0.2)
-),
-url("images/background image.jpg");
+    position: relative;
+    background-image: url("images/background image.jpg");
      background-size: cover;
      background-position: center;
+     color: white;
+     position: relative;
 }
+.hero-text{
+    font-size:6rem;
+    font-weight:700;
+    font-family:'Playfair Display', serif;
+}
+.hero-text span{
+    colour: black;
+    font-size: smaller;
+}
+.small-text{
+   letter-spacing:3px;
+   text-transform:uppercase;
+   font-size:0.9rem; 
+}
+.btn-dark{
+   border:none;
+   padding:12px 28px;
+   border-radius:40px;
+   font-weight:600;
+}
+/* menu section */
+#menu{
+    background-color: #F7D8CC;
+    padding: 80px 0;
+}
+.background{
+    color: brown
+}
+.section-title{
+     text-align: center;
+     font-size: 2.2rem;
+     margin-bottom: 60px;
+     font-weight: bold;
+     font-family: playfair display;
+}
+/* card  */
+.card{
+    border-radius: 30px;
+
+}
+.card-body{
+    background-color: #F2E6D8;
+}
+.card-img{
+    height: 250px;
+    object-fit: cover;
+}
+.card-title{
+    font-family: playfair display;
+}
+.buy-btn{
+    color: black !important;
+    border: none !important;
+    border-radius: 40px;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
 
